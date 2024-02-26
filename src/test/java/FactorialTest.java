@@ -8,6 +8,7 @@ public class FactorialTest {
         int result = Factorial.factorial(-1);
         assertEquals(Exception.class,result);
     }
+    @Test
     public void nispositive(){
         int result = Fibonacci.fibonacci(4);
         assertEquals(24,result);

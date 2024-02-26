@@ -4,17 +4,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class Stacktest {
-    //si la pile n'est pas pleine
     @Test
-    public void pushtest1 (){
+    public void push_pileisnotfull (){
         Stack s= new Stack();
         s.push(1);
         assertEquals(1,s.size());
         assertEquals(1,s.peek());
     }
     @Test
-    //si la pile est pleine
-    public void pushtest2 (){
+    public void push_pileisfull (){
         Stack s =new Stack();
         for (int i=0;i<10;i++){
             s.push(i);
@@ -25,7 +23,7 @@ public class Stacktest {
     }
     @Test
     //si la pile n'est pas vide
-    public void poptest1(){
+    public void pop_pileisnotfull(){
 
         Stack s = new Stack();
         s.push(1);
@@ -34,7 +32,7 @@ public class Stacktest {
     }
     @Test
     //si la pile est vide
-    public void poptest2(){
+    public void pop_pileisfull(){
         Stack s = new Stack();
         assertEquals(Exception.class,s.pop());
     }
