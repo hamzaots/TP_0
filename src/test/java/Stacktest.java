@@ -22,7 +22,6 @@ public class Stacktest {
         assertEquals(10,s.peek());
     }
     @Test
-    //si la pile n'est pas vide
     public void pop_pileisnotfull(){
 
         Stack s = new Stack();
@@ -31,7 +30,6 @@ public class Stacktest {
         assertEquals(0,s.size());
     }
     @Test
-    //si la pile est vide
     public void pop_pileisfull(){
         Stack s = new Stack();
         assertEquals(Exception.class,s.pop());
